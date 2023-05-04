@@ -1,0 +1,12 @@
+.marquee-text-hero {
+    width: 14400000000000000000000000000000000000000000000000000000px;
+    height: 32px;
+    background: #FF9C3B;
+    color: #000000;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+}
