@@ -39,14 +39,16 @@
 }
 
 .second-line {
-    padding-top: 4rem;
+    /* padding-top: 4rem;         for-letters */
+    padding-top: 2rem;
+    /*for svg*/
     padding-left: 12rem;
     display: flex;
     justify-content: space-between;
 }
 
 .third-line {
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
     display: flex;
     justify-content: space-around;
 }

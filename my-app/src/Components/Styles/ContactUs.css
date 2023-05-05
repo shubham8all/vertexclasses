@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+
+
+.contact-us-heading {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 91px;
+    letter-spacing: 0.05em;
+    color: #FF8D32;
+    margin-left: 8rem;
+}
+
+.divider {
+    display: flex;
+    justify-content: space-around;
+}
+
+label {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+    color: #6D6D6D;
+}
+
+.lower-section-contactus {
+    height: 16px;
+    background: #A43CFF;
+    margin-top: 4rem;
+}
+
+#name {
+    height: 48px;
+    width: 411px;
+    background: #6D6D6D;
+    border-radius: 6px;
+}
+
+#message {
+    width: 411px;
+    height: 222px;
+    background: #6D6D6D;
+    border-radius: 6px;
+}
+
+.contactus-right {
+    display: flex;
+    flex-direction: column;
+    /* align-items: end; */
+}

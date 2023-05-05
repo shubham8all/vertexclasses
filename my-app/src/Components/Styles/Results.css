@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+
+.images {
+    display: flex;
+    justify-content: space-around;
+}
+
+.our-results {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 91px;
+    letter-spacing: 0.05em;
+    color: #FF8D32;
+    margin-left: 8rem;
+}
+
+.lower-section-results {
+    height: 16px;
+    background: #FF8C3C;
+    margin-top: 4rem;
+}
