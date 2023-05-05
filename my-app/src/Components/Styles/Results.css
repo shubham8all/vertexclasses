@@ -3,6 +3,11 @@
 .images {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.second-image {
+    padding: 2rem;
 }
 
 .our-results {

@@ -11,7 +11,7 @@ const Results = () => {
         {/* <img src={OurResults} alt="Our Results"/> */}
         <div className='images'>
             <img src={SecondTopper} alt="Toppers Image"/>
-            <img src={Topper} alt="Toppers Image"/>
+            <img src={Topper} alt="Toppers Image" className='second-image'/>
         </div>
         <div className='lower-section-results'>
             .

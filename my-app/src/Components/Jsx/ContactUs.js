@@ -6,6 +6,7 @@ import Button from './Button'
 const ContactUs = () => {
   return (
     <>
+    <div className='contact-us'>
         <p className='contact-us-heading'>Contact Us</p>
         <div className='divider'>
             <div className='contactus-left'>
@@ -34,6 +35,7 @@ const ContactUs = () => {
             </div>
         </div>
         <div className='lower-section-contactus'>.</div>
+        </div>
     </>
   )
 }

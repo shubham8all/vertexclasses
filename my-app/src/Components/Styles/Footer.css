@@ -3,8 +3,10 @@
 .footer {
     display: flex;
     justify-content: space-around;
-    height: 400px;
+    /* height: 400px; */
     background-color: #212121;
+    flex-wrap: wrap;
+    min-height: 0;
 }
 
 .heading {
@@ -95,8 +97,11 @@ li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 64px;
+    /* height: 64px; */
     background: #FB6E35;
+    flex-wrap: wrap;
+    min-height: 0;
+    margin-top: 4rem;
 }
 
 .lower-footer-text {
@@ -104,7 +109,11 @@ li a {
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    line-height: 37px;
+    /* line-height: 37px; */
     letter-spacing: 0.05em;
     color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }

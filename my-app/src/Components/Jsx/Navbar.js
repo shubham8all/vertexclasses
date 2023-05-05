@@ -3,20 +3,37 @@ import '../Styles/Navbar.css'
 import  Button from './Button'
 import Announcements from '../svgs/Announcements.svg'
 import { NavLink } from 'react-router-dom'
+import { useState } from 'react'
+import {FaTimes,FaBars} from 'react-icons/fa'
 
 const Navbar = () => {
+  const [click,setClick]=useState(false);
+  function handleClick()
+  {
+      if(click===false)
+      setClick(true);
+      else
+      setClick(false);
+  }
     const messageAnnouncement="New Batch for Class XII is starting from 12th May";
   return (
     <>
         <nav className='navbar'>
             <div className='nav-logo'><span className='vertex'>Vertex</span><span> </span><span className='classes'>Classes</span></div>
-            <div className='nav-items'>
+            <div className={click?'nav-items-mobile':'nav-items'}>
             <li><NavLink>Home</NavLink></li>
             <li><NavLink>AboutUs</NavLink></li>
             <li><NavLink>Admission</NavLink></li>
             <li><NavLink>Student Zone</NavLink></li>
-            <Button buttonName='Sign In' />
+            {/* <Button buttonName='Sign In' /> */}
+            <button className='btn'>Sign In</button>
             </div>
+            <div className="mobile-menu-icon" onClick={handleClick}>
+            {click?
+                (<FaTimes size={20} style={{color:"white"}}/>):
+                (<FaBars size={20} style={{color:"white"}}/>)
+            }
+    </div>
         </nav>
         <div className='announcement'>
         <div className='announcement-img'>

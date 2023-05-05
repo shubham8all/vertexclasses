@@ -52,6 +52,24 @@ li {
     align-items: center;
 }
 
+.btn {
+    box-sizing: border-box;
+    display: flex;
+    font-family: 'google-sans-regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #151515;
+    width: 137px;
+    height: 48px;
+    background-color: #FCD444;
+    align-items: center;
+    border: 0.5px solid #FCD444;
+    border-radius: 4px;
+    justify-content: center;
+}
+
 .for-space {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -64,4 +82,87 @@ li {
 
 .announcement-img {
     margin-top: 0;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+    .nav-items-mobile {
+        position: absolute;
+        display: block;
+        list-style: none;
+        left: 0;
+        top: 75px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+        background-color: #FFFFFF;
+        z-index: 1;
+    }
+
+    .btn {
+        position: relative;
+        display: block;
+        left: 43%;
+    }
+
+    .nav-items-mobile li {
+        display: flex;
+    }
+
+    .nav-items-mobile li a {
+        text-align: center;
+        width: 100%;
+        padding: 32px;
+        transition: all 0.5s ease;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+        color: #565656;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 2rem;
+        width: 6rem;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+        border: none;
+        outline: none;
+        top: 25px;
+        right: 25px;
+    }
+}
+
+@media screen and (max-width:832px) {
+    .nav-items-mobile {
+        position: absolute;
+        display: block;
+        list-style: none;
+        left: 0;
+        top: 75px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+
+    .btn {
+        position: relative;
+        display: block;
+        left: 36%;
+    }
 }
