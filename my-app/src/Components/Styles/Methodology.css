@@ -9,8 +9,18 @@
     margin-left: 8rem;
 }
 
+.methodology-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .lower-section-methodology {
     height: 16px;
     background: #FFCB0F;
     margin-top: 4rem;
+}
+
+.for-space {
+    padding: 2rem;
 }
