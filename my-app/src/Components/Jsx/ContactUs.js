@@ -16,17 +16,17 @@ const ContactUs = () => {
                 <form className='contactus-right'>
                 {/* <div> */}
                     <label>Name</label>
-                    <input type='name' placeholder='Enter Your Name Here!' id='name'></input>
+                    <input type='name' /*placeholder='Enter Your Name Here!'*/ id='name'></input>
                     {/* </div> */}
                     <br />
                     {/* <div> */}
                     <label>Mobile No</label>
-                    <input type='name' placeholder='Enter Your Mobile Number Here!' id='name'></input>
+                    <input type='name' /*placeholder='Enter Your Mobile Number Here!'*/ id='name'></input>
                     {/* </div> */}
                     <br />
                     {/* <div> */}
                     <label>Message</label>
-                    <input type='name' placeholder='Enter Your Message Here!' id='message'></input>
+                    <input type='name' /*placeholder='Enter Your Message Here!'*/ id='message'></input>
                     {/* </div> */}
                 </form>
                 {/* <div className='newButton' style={{marginLeft:"17.5rem",marginTop:"1rem"}}> */}
