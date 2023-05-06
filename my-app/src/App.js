@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <Hero />
+      {/* <Hero /> */}
       <Methodology />
       <CoursesOffered />
       <Results />
