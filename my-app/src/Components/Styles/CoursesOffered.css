@@ -24,3 +24,10 @@
 .course-offered {
     padding: 1rem;
 }
+
+@media screen and (max-width:1000px) {
+    .title-courses-offered {
+        font-size: 40px;
+        margin-left: 2rem;
+    }
+}

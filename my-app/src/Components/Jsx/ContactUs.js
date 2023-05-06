@@ -29,8 +29,10 @@ const ContactUs = () => {
                     <input type='name' placeholder='Enter Your Message Here!' id='message'></input>
                     {/* </div> */}
                 </form>
-                <div style={{marginLeft:"17.5rem",marginTop:"1rem"}}>
-                <Button buttonName="Send ➤" />
+                {/* <div className='newButton' style={{marginLeft:"17.5rem",marginTop:"1rem"}}> */}
+              <div className='newButton'>
+              <button className='btn'>Send ➤</button>
+                {/* <Button buttonName="Send ➤" /> */}
                 </div>
             </div>
         </div>

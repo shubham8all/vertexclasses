@@ -89,6 +89,12 @@ li {
 }
 
 @media screen and (max-width:1000px) {
+    .marquee-section {
+        height: 23px;
+    }
+}
+
+@media screen and (max-width:1400px) {
     .nav-items-mobile {
         position: absolute;
         display: block;
@@ -157,7 +163,7 @@ li {
         top: 75px;
         transition: all 0.5s ease-out;
         width: 100%;
-        background-color: #FFFFFF;
+        background-color: rgb(255, 255, 255);
     }
 
     .btn {
