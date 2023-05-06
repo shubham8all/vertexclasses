@@ -34,10 +34,10 @@ const Navbar = () => {
         <nav className='navbar'>
             <div className='nav-logo'><span className='vertex'>Vertex</span><span> </span><span className='classes'>Classes</span></div>
             <div className={click?'nav-items-mobile':'nav-items'}>
-            <li><NavLink>Home</NavLink></li>
-            <li><NavLink>AboutUs</NavLink></li>
-            <li><NavLink>Admission</NavLink></li>
-            <li><NavLink>Student Zone</NavLink></li>
+            <li><NavLink to="/">Home</NavLink></li>
+            <li><NavLink to="/aboutus">AboutUs</NavLink></li>
+            <li><NavLink to="/admission">Admission</NavLink></li>
+            <li><NavLink to="/studentzone">Student Zone</NavLink></li>
             {/* <Button buttonName='Sign In' /> */}
             <button className='btn'>Sign In</button>
             </div>

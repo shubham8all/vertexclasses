@@ -1,26 +1,20 @@
 import React from 'react'
-import Navbar from './Components/Jsx/Navbar'
-import Hero from './Components/Jsx/Hero'
-import Footer from './Components/Jsx/Footer'
-import Results from './Components/Jsx/Results'
-import ContactUs from './Components/Jsx/ContactUs'
-import CoursesOffered from './Components/Jsx/CoursesOffered'
-import Methodology from './Components/Jsx/Methodology'
-// import MethodologyCard from './Components/Jsx/MethodologyCard'
+import {Routes,Route} from 'react-router-dom'
+import RouteHome from "./Routes/RouteHome"
+import RouteAboutUs from "./Routes/RouteAboutUs"
+import RouteAdmission from "./Routes/RouteAdmission"
+import RouteStudentZone from "./Routes/RouteStudentZone"
 
-const App = () => {
+export default function App() {
   return (
-    <div>
-      <Navbar />
-      {/* <Hero /> */}
-      <Methodology />
-      <CoursesOffered />
-      <Results />
-      <ContactUs />
-      <Footer />
-      {/* <MethodologyCard /> */}
-    </div>
-  )
+    <>
+      <Routes>
+        <Route path="/" element={<RouteHome />}/>
+        <Route path="/aboutus" element={<RouteAboutUs />}/> 
+        <Route path="/admission" element={<RouteAdmission />}/>
+        <Route path="/studentzone" element={<RouteStudentZone />}/>
+      </Routes>
+    </>
+    );
 }
 
-export default App
