@@ -1,7 +1,7 @@
 import React from 'react'
 import Topper from '../svgs/topper.svg'
 import SecondTopper from '../svgs/second-topper.svg'
-// import OurResults from '../svgs/OurResults.svg'
+import OurResults from '../svgs/OurResults.svg'
 import '../Styles/Results.css'
 
 const Results = () => {

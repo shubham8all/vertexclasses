@@ -12,6 +12,13 @@
     /*or height 40px*/
     width: 95%;
     z-index: 10;
+    top: 0;
+}
+
+/*Changing Navbar bg while scrolling*/
+.heading-bg {
+    background-color: rgba(0, 0, 0, 0.85);
+    transition: 0.5s;
 }
 
 .nav-items a {
@@ -75,30 +82,21 @@ li {
     justify-content: center;
 }
 
-/*Changing Navbar bg while scrolling*/
-.heading-bg {
-    background-color: rgba(0, 0, 0, 0.85);
-    transition: 0.5s;
-}
-
 .for-space {
     padding-left: 2rem;
     padding-right: 2rem;
 }
 
 .announcement {
-    margin-top: 4.5rem;
+    margin-top: 0;
     display: flex;
-    position: fixed;
-    height: 8%;
-    /*or height 40px*/
-    width: 100%;
+    position: absolute;
+    top: 8%;
     z-index: 10;
 }
 
 .announcement-img {
     margin-top: 0;
-    /* position: fixed; */
 }
 
 .mobile-menu-icon {
@@ -111,7 +109,11 @@ li {
     }
 }
 
-@media screen and (max-width:1600px) {
+@media screen and (max-width:1400px) {
+    .navbar {
+        width: 93%;
+    }
+
     .nav-items-mobile {
         position: absolute;
         display: block;
@@ -127,7 +129,7 @@ li {
     .btn {
         position: relative;
         display: block;
-        left: 46%;
+        left: 43%;
     }
 
     .nav-items-mobile li {
@@ -159,24 +161,25 @@ li {
     }
 
     .mobile-menu-icon {
-        display: block;
+        /* display: block;
         position: absolute;
         font-size: 30px;
         color: rgb(255, 255, 255);
         background-color: transparent;
         border: none;
         outline: none;
-        top: 10px;
-        right: 25px;
-        position: fixed;
-    }
-
-    .announcement {
-        margin-top: 3.2rem;
+        top: 25px;
+        right: 25px; */
+        display: initial;
     }
 }
 
 @media screen and (max-width:832px) {
+
+    .navbar {
+        width: 80%;
+    }
+
     .nav-items-mobile {
         position: absolute;
         display: block;
@@ -184,18 +187,19 @@ li {
         left: 0;
         top: 75px;
         transition: all 0.5s ease-out;
-        width: 87%;
+        width: 100%;
         background-color: rgb(255, 255, 255);
     }
 
     .btn {
         position: relative;
         display: block;
-        left: 38%;
+        left: 36%;
     }
 
     .vertex,
     .classes {
         font-size: 25px;
     }
+
 }

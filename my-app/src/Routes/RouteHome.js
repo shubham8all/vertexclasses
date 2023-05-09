@@ -1,6 +1,6 @@
 import React from 'react'
-import Hero from '../Components/Jsx/Hero'
 import Navbar from '../Components/Jsx/Navbar'
+import Hero from '../Components/Jsx/Hero'
 import Methodology from '../Components/Jsx/Methodology'
 import CoursesOffered from '../Components/Jsx/CoursesOffered'
 import Results from '../Components/Jsx/Results'
@@ -14,10 +14,7 @@ const RouteHome = () => {
         <br />
         <br />
         <br />
-        <br />
-        <br />
-
-        <Hero />
+        {/* <Hero /> */}
         <Methodology />
         <CoursesOffered />
         <Results />
