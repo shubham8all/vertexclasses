@@ -1,4 +1,5 @@
 import React from 'react'
+import Hero from '../Components/Jsx/Hero'
 import Navbar from '../Components/Jsx/Navbar'
 import Methodology from '../Components/Jsx/Methodology'
 import CoursesOffered from '../Components/Jsx/CoursesOffered'
@@ -10,6 +11,13 @@ const RouteHome = () => {
   return (
     <>
         <Navbar />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <Hero />
         <Methodology />
         <CoursesOffered />
         <Results />

@@ -1,13 +1,19 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700;900&display=swap');
 
+body {
+    overflow-x: hidden;
+    /* Hide scrollbars */
+}
+
 .hero-section {
     /* height: 560px; */
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
     min-height: 0;
-    flex: 1;
+    /* flex: 1; */
+    min-width: 0;
 }
 
 .lets-prepare-today {
@@ -39,6 +45,7 @@
 
 .lower-hero-section {
     padding-top: 10rem;
+    min-width: 0;
 }
 
 .second-line {
@@ -65,4 +72,53 @@
 .right-section {
     padding-top: 4rem;
     padding-right: 8rem;
+}
+
+@media screen and (max-width:1000px) {
+    .lets-prepare-today {
+        font-size: 50px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .for-better {
+        font-size: 50px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    .tomorrow {
+        font-size: 47px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    .left-section {
+        padding: 0;
+    }
+
+    .second-line {
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .third-line {
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .right-section {
+        margin-left: 3rem;
+    }
+
+    .towards-right {
+        margin-left: 5rem;
+    }
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Styles/Navbar.css'
-import  Button from './Button'
+// import  Button from './Button'
 import Announcements from '../svgs/Announcements.svg'
 import AnnouncementsMobile from '../svgs/AnnouncementMobile.svg'
 import { NavLink } from 'react-router-dom'
@@ -29,13 +29,24 @@ const Navbar = () => {
     };
   }, []);
     const messageAnnouncement="New Batch for Class XII is starting from 12th May";
+    const [navbarColour, setNavbarColour]=useState(false);
+    function handleNavbarWhileScrolling()
+    {
+        if(window.scrollY>=100)
+        setNavbarColour(true);
+        else
+        setNavbarColour(false);
+    };
+
+    window.addEventListener("scroll",handleNavbarWhileScrolling);
   return (
     <>
-        <nav className='navbar'>
+        <div className={navbarColour?"navbar heading-bg":"navbar"}>
             <div className='nav-logo'><span className='vertex'>Vertex</span><span> </span><span className='classes'>Classes</span></div>
             <div className={click?'nav-items-mobile':'nav-items'}>
             <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/aboutus">AboutUs</NavLink></li>
+            <li><NavLink to="/courses">Courses</NavLink></li>
             <li><NavLink to="/admission">Admission</NavLink></li>
             <li><NavLink to="/studentzone">Student Zone</NavLink></li>
             {/* <Button buttonName='Sign In' /> */}
@@ -47,7 +58,7 @@ const Navbar = () => {
                 (<FaBars size={20} style={{color:"white"}}/>)
             }
     </div>
-        </nav>
+        </div>
         <div className='announcement'>
         <div className='announcement-img'>
         {/* <img src={Announcements} alt="announcements.svg"/> */}
