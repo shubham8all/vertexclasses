@@ -97,6 +97,7 @@ li {
 
 .announcement-img {
     margin-top: 0;
+    position: fixed;
 }
 
 .mobile-menu-icon {

@@ -14,7 +14,7 @@ const RouteHome = () => {
         <br />
         <br />
         <br />
-        {/* <Hero /> */}
+        <Hero />
         <Methodology />
         <CoursesOffered />
         <Results />

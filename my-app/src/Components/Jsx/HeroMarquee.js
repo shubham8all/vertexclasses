@@ -3,9 +3,11 @@ import '../Styles/HeroMarquee.css'
 
 const HeroMarquee = () => {
   return (
-    <div className='marquee-hero-section'>
-        <marquee>
-            <p className='marquee-text-hero'>
+    <div className="marquee-container1">
+      <div className="marquee-text1">
+        
+
+{/* <p className='marquee-text-hero'> */}
             <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
@@ -41,12 +43,6 @@ const HeroMarquee = () => {
             <span className='for-space'></span>
             JEE Main
             <span className='for-space'></span>
-            NEET
-            <span className='for-space'></span>
-            CBSE
-            <span className='for-space'></span>
-            BSEB
-            <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
             JEE Main
@@ -78,15 +74,8 @@ const HeroMarquee = () => {
             BSEB
             <span className='for-space'></span>
             JEE Main + ADVANCED
-            <span className='for-space'></span>
-            JEE Main
-            <span className='for-space'></span>
-            NEET
-            <span className='for-space'></span>
-            CBSE
-            <span className='for-space'></span>
-            BSEB
             <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
             JEE Main
@@ -116,7 +105,10 @@ const HeroMarquee = () => {
             CBSE
             <span className='for-space'></span>
             BSEB
+            <span className='for-space'></span>
+            JEE Main + ADVANCED
             <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
             JEE Main
@@ -149,6 +141,9 @@ const HeroMarquee = () => {
             <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
+            JEE Main + ADVANCED
+            <span className='for-space'></span>
             JEE Main
             <span className='for-space'></span>
             NEET
@@ -176,7 +171,10 @@ const HeroMarquee = () => {
             CBSE
             <span className='for-space'></span>
             BSEB
+            <span className='for-space'></span>
+            JEE Main + ADVANCED
             <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
             JEE Main
@@ -208,14 +206,8 @@ const HeroMarquee = () => {
             BSEB
             <span className='for-space'></span>
             JEE Main + ADVANCED
-            <span className='for-space'></span>
-            JEE Main
-            <span className='for-space'></span>
-            NEET
-            <span className='for-space'></span>
-            CBSE
             <span className='for-space'></span>
-            BSEB            <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
             JEE Main
@@ -248,14 +240,7 @@ const HeroMarquee = () => {
             <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
-            JEE Main
-            <span className='for-space'></span>
-            NEET
-            <span className='for-space'></span>
-            CBSE
-            <span className='for-space'></span>
-            BSEB
-            <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
             JEE Main
@@ -287,15 +272,8 @@ const HeroMarquee = () => {
             BSEB
             <span className='for-space'></span>
             JEE Main + ADVANCED
-            <span className='for-space'></span>
-            JEE Main
-            <span className='for-space'></span>
-            NEET
-            <span className='for-space'></span>
-            CBSE
-            <span className='for-space'></span>
-            BSEB
             <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
             JEE Main
@@ -327,15 +305,8 @@ const HeroMarquee = () => {
             BSEB
             <span className='for-space'></span>
             JEE Main + ADVANCED
-            <span className='for-space'></span>
-            JEE Main
-            <span className='for-space'></span>
-            NEET
-            <span className='for-space'></span>
-            CBSE
             <span className='for-space'></span>
-            BSEB
-            <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
             JEE Main
@@ -367,15 +338,8 @@ const HeroMarquee = () => {
             BSEB
             <span className='for-space'></span>
             JEE Main + ADVANCED
-            <span className='for-space'></span>
-            JEE Main
             <span className='for-space'></span>
-            NEET
-            <span className='for-space'></span>
-            CBSE
-            <span className='for-space'></span>
-            BSEB
-            <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
             JEE Main
@@ -408,6 +372,9 @@ const HeroMarquee = () => {
             <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
+            JEE Main + ADVANCED
+            <span className='for-space'></span>
             JEE Main
             <span className='for-space'></span>
             NEET
@@ -435,7 +402,10 @@ const HeroMarquee = () => {
             CBSE
             <span className='for-space'></span>
             BSEB
+            <span className='for-space'></span>
+            JEE Main + ADVANCED
             <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
             JEE Main
@@ -465,7 +435,10 @@ const HeroMarquee = () => {
             CBSE
             <span className='for-space'></span>
             BSEB
+            <span className='for-space'></span>
+            JEE Main + ADVANCED
             <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
             JEE Main
@@ -495,7 +468,10 @@ const HeroMarquee = () => {
             CBSE
             <span className='for-space'></span>
             BSEB
+            <span className='for-space'></span>
+            JEE Main + ADVANCED
             <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
             JEE Main
@@ -525,7 +501,10 @@ const HeroMarquee = () => {
             CBSE
             <span className='for-space'></span>
             BSEB
+            <span className='for-space'></span>
+            JEE Main + ADVANCED
             <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
             JEE Main
@@ -558,6 +537,9 @@ const HeroMarquee = () => {
             <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
+            JEE Main + ADVANCED
+            <span className='for-space'></span>
             JEE Main
             <span className='for-space'></span>
             NEET
@@ -585,7 +567,10 @@ const HeroMarquee = () => {
             CBSE
             <span className='for-space'></span>
             BSEB
+            <span className='for-space'></span>
+            JEE Main + ADVANCED
             <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
             JEE Main
@@ -615,7 +600,10 @@ const HeroMarquee = () => {
             CBSE
             <span className='for-space'></span>
             BSEB
+            <span className='for-space'></span>
+            JEE Main + ADVANCED
             <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
             JEE Main
@@ -648,6 +636,9 @@ const HeroMarquee = () => {
             <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
+            JEE Main + ADVANCED
+            <span className='for-space'></span>
             JEE Main
             <span className='for-space'></span>
             NEET
@@ -675,7 +666,10 @@ const HeroMarquee = () => {
             CBSE
             <span className='for-space'></span>
             BSEB
+            <span className='for-space'></span>
+            JEE Main + ADVANCED
             <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
             JEE Main
@@ -708,6 +702,9 @@ const HeroMarquee = () => {
             <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
+            JEE Main + ADVANCED
+            <span className='for-space'></span>
             JEE Main
             <span className='for-space'></span>
             NEET
@@ -735,7 +732,10 @@ const HeroMarquee = () => {
             CBSE
             <span className='for-space'></span>
             BSEB
+            <span className='for-space'></span>
+            JEE Main + ADVANCED
             <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
             JEE Main
@@ -765,7 +765,10 @@ const HeroMarquee = () => {
             CBSE
             <span className='for-space'></span>
             BSEB
+            <span className='for-space'></span>
+            JEE Main + ADVANCED
             <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
             JEE Main
@@ -798,6 +801,9 @@ const HeroMarquee = () => {
             <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
+            JEE Main + ADVANCED
+            <span className='for-space'></span>
             JEE Main
             <span className='for-space'></span>
             NEET
@@ -825,7 +831,10 @@ const HeroMarquee = () => {
             CBSE
             <span className='for-space'></span>
             BSEB
+            <span className='for-space'></span>
+            JEE Main + ADVANCED
             <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
             JEE Main
@@ -855,7 +864,10 @@ const HeroMarquee = () => {
             CBSE
             <span className='for-space'></span>
             BSEB
+            <span className='for-space'></span>
+            JEE Main + ADVANCED
             <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
             JEE Main
@@ -885,7 +897,10 @@ const HeroMarquee = () => {
             CBSE
             <span className='for-space'></span>
             BSEB
+            <span className='for-space'></span>
+            JEE Main + ADVANCED
             <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
             JEE Main
@@ -915,7 +930,10 @@ const HeroMarquee = () => {
             CBSE
             <span className='for-space'></span>
             BSEB
+            <span className='for-space'></span>
+            JEE Main + ADVANCED
             <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
             JEE Main
@@ -948,6 +966,9 @@ const HeroMarquee = () => {
             <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
+            JEE Main + ADVANCED
+            <span className='for-space'></span>
             JEE Main
             <span className='for-space'></span>
             NEET
@@ -975,7 +996,10 @@ const HeroMarquee = () => {
             CBSE
             <span className='for-space'></span>
             BSEB
+            <span className='for-space'></span>
+            JEE Main + ADVANCED
             <span className='for-space'></span>
+            JEE Main            <span className='for-space'></span>
             JEE Main + ADVANCED
             <span className='for-space'></span>
             JEE Main
@@ -1009,16 +1033,11 @@ const HeroMarquee = () => {
             JEE Main + ADVANCED
             <span className='for-space'></span>
             JEE Main
-            <span className='for-space'></span>
-            NEET
-            <span className='for-space'></span>
-            CBSE
-            <span className='for-space'></span>
-            BSEB
-            </p>
-        </marquee>
+            
+            {/* </p> */}
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default HeroMarquee
