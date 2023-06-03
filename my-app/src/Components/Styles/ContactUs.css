@@ -73,4 +73,31 @@ label {
     .newButton {
         margin-left: 12.5rem;
     }
+
+    #name,
+    #message {
+        width: 320px;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width:832px) {
+
+    form {
+        width: 320px;
+        /* margin-left: 15px; */
+        margin-right: 5rem;
+    }
+
+    .contact-us-image {
+        height: 340px;
+    }
+
+    label {
+        margin-left: 30px;
+    }
+
+    .newButton {
+        margin-right: 60px;
+    }
 }

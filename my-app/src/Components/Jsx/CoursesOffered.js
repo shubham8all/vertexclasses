@@ -11,16 +11,16 @@ const CoursesOffered = () => {
         <p className='title-courses-offered'>Courses Offered</p>
         <div className='courses-offered'>
         <div className='course-offered'>
-        <img src={JeeMainAdvanced} alt="Jee (Main + Advanced)"/>
+        <img src={JeeMainAdvanced} alt="Jee (Main + Advanced)" className='course-card'/>
         </div>
         <div className='course-offered'>
-        <img src={JeeMain} alt="Jee Main"/>
+        <img src={JeeMain} alt="Jee Main" className='course-card'/>
         </div>
         <div className='course-offered'>
-        <img src={NEET} alt="NEET"/>
+        <img src={NEET} alt="NEET" className='course-card'/>
         </div>
         <div className='course-offered'>
-        <img src={JuniorDivision} alt="Junior Division"/>
+        <img src={JuniorDivision} alt="Junior Division" className='course-card'/>
         </div>
         </div>
         <div className='lower-section-coursesoffered'>.</div>

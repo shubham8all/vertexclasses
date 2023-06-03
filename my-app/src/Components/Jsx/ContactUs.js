@@ -10,7 +10,7 @@ const ContactUs = () => {
         <p className='contact-us-heading'>Contact Us</p>
         <div className='divider'>
             <div className='contactus-left'>
-                <img src={ContactUsImage} alt="Man on cloud"/>
+                <img className='contact-us-image' src={ContactUsImage} alt="Man on cloud"/>
             </div>
             <div>
                 <form className='contactus-right'>
@@ -28,12 +28,13 @@ const ContactUs = () => {
                     <label>Message</label>
                     <input type='name' /*placeholder='Enter Your Message Here!'*/ id='message'></input>
                     {/* </div> */}
-                </form>
+                
                 {/* <div className='newButton' style={{marginLeft:"17.5rem",marginTop:"1rem"}}> */}
               <div className='newButton'>
               <button className='btn'>Send ➤</button>
                 {/* <Button buttonName="Send ➤" /> */}
                 </div>
+                </form>
             </div>
         </div>
         <div className='lower-section-contactus'>.</div>

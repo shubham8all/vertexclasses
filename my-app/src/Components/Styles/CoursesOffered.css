@@ -9,6 +9,10 @@
     margin-left: 8rem;
 }
 
+.course-card {
+    width: 430px;
+}
+
 .courses-offered {
     display: flex;
     justify-content: space-around;
@@ -29,5 +33,9 @@
     .title-courses-offered {
         font-size: 40px;
         margin-left: 2rem;
+    }
+
+    .course-card {
+        width: 300px;
     }
 }

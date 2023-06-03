@@ -33,7 +33,7 @@ const Footer = () => {
                 <li className='first-section-first'><NavLink>Study Material</NavLink></li>
             </div>
             <div className='fourth-section'>
-                <li className='heading'>Follow Us</li>
+                <li className='heading'><span className='heading-follow-us'>Follow Us</span></li>
                 <li className='first-section-first'>
                     <div className='socials'>
                     <a href="https://www.facebook.com/Prazz51/" rel="noreferrer" target="_blank"><FaFacebook size={20} style={{color:"white",marginRight:"1rem"}} /></a>

@@ -11,9 +11,6 @@ const RouteHome = () => {
   return (
     <>
         <Navbar />
-        <br />
-        <br />
-        <br />
         <Hero />
         <Methodology />
         <CoursesOffered />

@@ -178,7 +178,7 @@ li {
 @media screen and (max-width:832px) {
 
     .navbar {
-        width: 80%;
+        width: 75%;
     }
 
     .nav-items-mobile {
@@ -188,19 +188,19 @@ li {
         left: 0;
         top: 75px;
         transition: all 0.5s ease-out;
-        width: 100%;
+        width: 95%;
         background-color: rgb(255, 255, 255);
     }
 
     .btn {
         position: relative;
         display: block;
-        left: 36%;
+        left: 33%;
     }
 
     .vertex,
     .classes {
-        font-size: 25px;
+        font-size: 18px;
     }
 
 }
