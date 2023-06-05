@@ -23,7 +23,7 @@ const Footer = () => {
                 <li className='first-section-first'><NavLink>Jee (Main + Advanced)</NavLink></li>
                 <li className='first-section-first'><NavLink>Jee (Main)</NavLink></li>
                 <li className='first-section-first'><NavLink>NEET</NavLink></li>
-                <li className='first-section-first'><NavLink>Junior Division</NavLink></li>
+                <li className='first-section-first'><NavLink to="junior-division">Junior Division</NavLink></li>
             </div>
             <div className='third-section'>
                 <li className='heading'>Quick Links</li>
