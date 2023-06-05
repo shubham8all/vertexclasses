@@ -28,7 +28,7 @@ const ImageSliderLong = ({ images }) => {
   };
 
   // Update slidesToShow based on device width
-  if (width >= 1024) { // Laptops and iPads
+  if (width >= 900) { // Laptops and iPads
     settings.slidesToShow = 2;
   } else {
     settings.slidesToShow = 1; // Mobile devices

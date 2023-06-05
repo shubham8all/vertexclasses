@@ -4,10 +4,10 @@
     display: flex;
     justify-content: space-around;
     /* height: 400px; */
-    background-color: #212121;
+    background-color: #0c0c0c;
     flex-wrap: wrap;
-    min-height: 0;
     min-width: 0;
+    min-height: 23rem
 }
 
 .heading {
@@ -102,7 +102,7 @@ li a {
     background: #FB6E35;
     flex-wrap: wrap;
     min-height: 0;
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
 }
 
 .lower-footer-text {
@@ -155,5 +155,12 @@ li a {
 
     .heading-follow-us {
         margin-left: 30px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    
+    .footer{
+        min-height: 60rem
     }
 }

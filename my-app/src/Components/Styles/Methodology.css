@@ -22,12 +22,21 @@
 }
 
 .for-space {
-    padding: 2rem;
+    padding: 3rem;
+    /* margin: 2rem; */
+}
+
+.study-material{
+    margin-top: 2.2rem;
 }
 
 @media screen and (max-width:1000px) {
     .title-methodology {
         font-size: 40px;
         margin-left: 2rem;
+    }
+
+    .study-material{
+        margin-top: 0rem;
     }
 }
