@@ -1,30 +1,30 @@
 import React from 'react'
 import '../Styles/Hero.css'
-import HeroImage from '../svgs/HeroImage.svg'
+// import HeroImage from '../svgs/HeroImage.svg'
 import Carousel from './Carousel'
 import HeroArrow from '../svgs/heroArrow.svg'
 import HeroArrow2 from '../svgs/heroArrow2.svg'
 import HeroStar from '../svgs/heroStar.svg'
 import HeroStar1 from '../svgs/heroStar1.svg'
-import LetsPrepareToday from '../svgs/letspreparetoday.svg'
-import ForBetter from '../svgs/forbetter.svg'
-import Tomorrow from '../svgs/tomorrow.svg'
+// import LetsPrepareToday from '../svgs/letspreparetoday.svg'
+// import ForBetter from '../svgs/forbetter.svg'
+// import Tomorrow from '../svgs/tomorrow.svg'
 import HeroMarquee from './HeroMarquee'
-import Topper from '../svgs/topper.svg'
-import { useState,useEffect } from 'react'
+// import Topper from '../svgs/topper.svg'
+// import { useState,useEffect } from 'react'
 
 const Hero = () => {
-  const [width, setWidth] = useState(window.innerWidth);
+  // const [width, setWidth] = useState(window.innerWidth);
 
-  useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
+  // useEffect(() => {
+  //   const handleResize = () => setWidth(window.innerWidth);
+  //   window.addEventListener('resize', handleResize);
 
-    // Clean up event listener on unmount
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  //   // Clean up event listener on unmount
+  //   return () => {
+  //     window.removeEventListener('resize', handleResize);
+  //   };
+  // }, []);
   return (
     <>
      <div className='hero-section'> 

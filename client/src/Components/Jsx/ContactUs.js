@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Styles/ContactUs.css'
 import ContactUsImage from '../svgs/contactUs.svg'
-import Button from './Button'
+// import Button from './Button'
 
 const ContactUs = () => {
   return (

@@ -7,23 +7,23 @@
     background-color: #f1f1f1;
   }
   
-  h1 {
+ .error-404 {
     font-size: 6rem;
     color: #333;
     margin-bottom: 1rem;
   }
   
-  p {
+  .error-404-content {
     font-size: 1.6rem;
     color: #666;
     text-align: center;
   }
 
   @media screen and (max-width:1000px) {
-    h1{
+    .error-404{
         font-size: 3rem;
     }
-    p{
+    .error-404-content{
         font-size: 1rem;
     }
   }

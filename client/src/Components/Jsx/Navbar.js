@@ -28,7 +28,7 @@ const Navbar = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-    const messageAnnouncement="New Batch for Class XII is starting from 12th May";
+    // const messageAnnouncement="New Batch for Class XII is starting from 12th May";
     const [navbarColour, setNavbarColour]=useState(false);
     function handleNavbarWhileScrolling()
     {
@@ -64,9 +64,9 @@ const Navbar = () => {
         {/* <img src={Announcements} alt="announcements.svg"/> */}
         {/* {AnnouncementsImage} */}
         {width > 1000 ? (
-        <img src={Announcements} alt="Announcements Image" />
+        <img src={Announcements} alt="AnnouncementsImage" />
       ) : (
-        <img src={AnnouncementsMobile} alt="Announcements Image" />
+        <img src={AnnouncementsMobile} alt="AnnouncementsImage" />
       )}
         </div>
         <MarqueeModified message="New Batch for Class XII is starting from 12th May"/>
