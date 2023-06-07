@@ -6,10 +6,18 @@ dotenv.config({path:'./config.env'});
 require("./db/connection");
 const User = require("./models/userSchema");
 const userRouter = require("./routers/userRouter");
+const contactRouter = require("./routers/contactRouter");
 const port = process.env.PORT;
+const cors = require('cors');
+
+// Enable CORS for all routes
+app.use(cors({
+    origin:"*",
+}));
 
 app.use(express.json());
 app.use(userRouter);
+app.use(contactRouter);
 
 
 

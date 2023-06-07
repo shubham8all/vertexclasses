@@ -70,6 +70,7 @@ li {
     border: 0.5px solid #FCD444;
     border-radius: 4px;
     justify-content: center;
+    cursor: pointer;
 }
 
 .for-space {
@@ -99,12 +100,12 @@ li {
         height: 23px;
     }
 
-    .navbar{
+    .navbar {
         height: 9%;
     }
 
     .announcement {
-        top:8%;
+        top: 8%;
     }
 }
 

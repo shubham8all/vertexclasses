@@ -33,7 +33,9 @@ label {
     margin-top: 4rem;
 }
 
-#name {
+#name,
+#phone,
+#email {
     height: 48px;
     width: 411px;
     background: #6D6D6D;
@@ -56,6 +58,7 @@ label {
 .newButton {
     margin-left: 17.5rem;
     margin-top: 1rem;
+    cursor: pointer;
 }
 
 @media screen and (max-width:1372px) {

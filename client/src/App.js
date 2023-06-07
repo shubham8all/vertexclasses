@@ -6,6 +6,7 @@ import RouteCourses from "./Routes/RouteCourses"
 import RouteAdmission from "./Routes/RouteAdmission"
 import RouteStudentZone from "./Routes/RouteStudentZone"
 import RouteJuniorDivision from "./Routes/RouteJuniorDivision"
+import NotFound from './Components/Jsx/404'
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/admission" element={<RouteAdmission />}/>
         <Route path="/studentzone" element={<RouteStudentZone />}/>
         <Route path="/junior-division" element={<RouteJuniorDivision />}/>
+        <Route path="/*" element={<NotFound />}/>
       </Routes>
     </>
     );
