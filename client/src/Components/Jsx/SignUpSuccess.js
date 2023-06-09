@@ -8,7 +8,7 @@ const SignUpSuccess = () => {
   return (
     <>
     <div className='sign-up-bg'>
-    <div className='sign-up-page-wrapper'>
+    <div className='sign-up-page-wrapper sign-up-page-wrapper1'>
         <div className='sign-up-page-logo'>
             <img src={SignUpPageLogo} alt="logo" className='to-down-logo'/>
         </div>
