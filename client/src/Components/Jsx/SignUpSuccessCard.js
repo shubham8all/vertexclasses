@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 const SignUpSuccessCard = () => {
   return (
-    <div className='sign-up-card-container'>
+    <div className='sign-up-card-container to-down'>
     <span className='heading-sign-up'>Sign Up</span>
     <div className='sign-up-success'><img src={Confirmation} alt="check" /><span className='sign-up-success-text'>Success</span></div>
       <div className='sign-up-success-content'>

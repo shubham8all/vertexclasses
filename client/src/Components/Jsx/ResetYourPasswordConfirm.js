@@ -2,7 +2,6 @@ import React from 'react'
 import "../Styles/Signup.css"
 import SignUpPageLogo from "../svgs/MainLogo.svg"
 import SignUpFooter from "../svgs/sign-up-footer.svg"
-
 import ResetYourPasswordConfirmCard from './ResetYourPasswordConfirmCard'
 
 const ResetYourPasswordConfirm = () => {

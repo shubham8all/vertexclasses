@@ -7,18 +7,14 @@ import ResetYourPasswordVerification from '../Components/Jsx/ResetYourPasswordVe
 import ResetYourPasswordConfirm from '../Components/Jsx/ResetYourPasswordConfirm'
 import ResetPasswordConfirmation from '../Components/Jsx/ResetPasswordConfirmation'
 
-const RouteSignUp = () => {
+const RouteSignUpOTP = () => {
   return (
     <>
     {/* <Navbar /> */}
     <SignUpOTP />
-    <SignUpSuccess />
-    <ResetYourPasswordVerification />
-    <ResetYourPasswordConfirm />
-    <ResetPasswordConfirmation />
     {/* <Footer /> */}
     </>
   )
 }
 
-export default RouteSignUp
+export default RouteSignUpOTP

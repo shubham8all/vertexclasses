@@ -10,7 +10,7 @@ const SignUpSuccess = () => {
     <div className='sign-up-bg'>
     <div className='sign-up-page-wrapper'>
         <div className='sign-up-page-logo'>
-            <img src={SignUpPageLogo} alt="logo" />
+            <img src={SignUpPageLogo} alt="logo" className='to-down-logo'/>
         </div>
         <div className='sign-up-card'>
             <SignUpSuccessCard />

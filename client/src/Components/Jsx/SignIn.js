@@ -8,7 +8,7 @@ import SignInCard from './SignInCard'
 const SignIn = () => {
     return (
         <>
-        <div className='sign-in-bg'>
+        <div className='sign-up-bg'>
         <div className='sign-in-page-wrapper'>
             <div className='sign-up-page-logo'>
                 <img src={SignUpPageLogo} alt="logo" className='sign-up-page-logo'/>

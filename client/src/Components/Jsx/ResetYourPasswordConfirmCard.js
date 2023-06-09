@@ -1,7 +1,12 @@
 import React from 'react';
 import '../Styles/SignUpCard.css';
+import { useNavigate } from 'react-router-dom';
 
 const ResetYourPasswordConfirmCard = () => {
+  const navigate=useNavigate();
+  const handleNewPassword=()=>{
+    navigate("/password-changed-successfully")
+  }
   return (
     <div className='sign-up-card-container'>
     <span className='heading-sign-up'>Reset Your Password</span>
@@ -17,7 +22,7 @@ const ResetYourPasswordConfirmCard = () => {
         />
       </div>
       <div className='sign-up-buttons'>
-        <button className='sign-up-register'>Submit</button>
+        <button className='sign-up-register' onClick={handleNewPassword}>Submit</button>
       </div>
     </div>
   );

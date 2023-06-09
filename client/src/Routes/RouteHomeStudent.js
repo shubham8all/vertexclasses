@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../Components/Jsx/Navbar'
+import NavbarWithoutSignIn from '../Components/Jsx/NavbarWithoutSignIn'
 import Hero from '../Components/Jsx/Hero'
 import Methodology from '../Components/Jsx/Methodology'
 import CoursesOffered from '../Components/Jsx/CoursesOffered'
@@ -11,7 +11,7 @@ import Signup from '../Components/Jsx/Signup'
 const RouteHome = () => {
   return (
     <>
-        <Navbar />
+        <NavbarWithoutSignIn />
         <Hero />
         <Methodology />
         <CoursesOffered />

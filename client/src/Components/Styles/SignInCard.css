@@ -7,6 +7,7 @@
     /* margin-right: auto; */
     /* margin-top: 1rem; */
     display: flex;
+    justify-content: space-around;
 }
 
 .extreme-lower-section-sign-in .already-have-an-account {
@@ -78,6 +79,7 @@
         width: 316px;
         height: 42px;
         margin: auto;
+        margin-top: 0.5rem;
     }
 
     .sign-in-register {

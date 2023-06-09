@@ -200,6 +200,18 @@ label {
     justify-content: center;
 }
 
+.to-down {
+    margin-top: 15rem;
+}
+
+.to-seperate {
+    display: flex;
+}
+
+.to-seperate .sign-in-redirect {
+    margin-right: 18px;
+}
+
 @media screen and (max-width:800px) {
 
     .sign-up-card-container {

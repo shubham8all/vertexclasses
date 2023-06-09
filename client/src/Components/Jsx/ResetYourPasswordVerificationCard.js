@@ -1,7 +1,12 @@
 import React from 'react';
 import '../Styles/SignUpCard.css';
+import { useNavigate } from 'react-router-dom';
 
 const ResetYourPasswordVerificationCard = () => {
+	const navigate = useNavigate();
+	const handleOTP=()=>{
+	  navigate("/otp");
+	}
   return (
     <div className='sign-up-card-container'>
     <span className='heading-sign-up'>Reset Your Password</span>
@@ -234,7 +239,7 @@ const ResetYourPasswordVerificationCard = () => {
         <input type='text' className='sign-up-email' />
       </div>
       <div className='sign-up-buttons'>
-        <button className='sign-up-register'>Send OTP</button>
+        <button className='sign-up-register' onClick={handleOTP}>Send OTP</button>
       </div>
     </div>
   );

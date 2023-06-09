@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../Components/Jsx/Navbar'
-import Footer from '../Components/Jsx/Footer'
+// import Footer from '../Components/Jsx/Footer'
 import NotFound from '../Components/Jsx/404'
 
 const RouteAdmission = () => {
@@ -8,7 +8,7 @@ const RouteAdmission = () => {
     <>
     <Navbar />
     <NotFound />
-    <Footer />
+    {/* <Footer /> */}
     </>
   )
 }

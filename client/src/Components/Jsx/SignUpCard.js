@@ -3,8 +3,10 @@ import { useState } from 'react';
 import '../Styles/SignUpCard.css';
 import GoogleLogo from '../svgs/GoogleLogo.svg';
 import { NavLink } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const SignUpCard = () => {
+  const navigate = useNavigate();
     const [name, setName] = useState('');
     const [mobileNo, setMobileNo] = useState('');
     const [email, setEmail] = useState('');
@@ -38,7 +40,8 @@ const SignUpCard = () => {
   
     //   const data = await res.json();
       if (res.ok) {
-        alert("You have been successfully registered :)");
+        // alert("You have been successfully registered :)");
+		navigate("/successfully-registered");
       } else {
         alert("BAD Request, please fill in all the entries properly");
       }
@@ -298,8 +301,11 @@ const SignUpCard = () => {
       </div>
       <div className='extreme-lower-section'>
         <p className='already-have-an-account'>Already have an Account?</p>
+		<div className='to-seperate'>
         <NavLink to="/sign-in" className='sign-in-redirect'>Sign in</NavLink>
+        <NavLink to="/" className='sign-in-redirect'>Home</NavLink>
       </div>
+	  </div>
     </div>
   );
 };

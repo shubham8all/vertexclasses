@@ -1,16 +1,16 @@
 import React from 'react'
 import Navbar from '../Components/Jsx/Navbar'
 // import Footer from '../Components/Jsx/Footer'
-import NotFound from '../Components/Jsx/404'
+import SignUpSuccess from '../Components/Jsx/SignUpSuccess'
 
-const RouteAboutUs = () => {
+const RouteSignUpSuccess = () => {
   return (
     <>
         <Navbar />
-        <NotFound />
+        <SignUpSuccess />
         {/* <Footer /> */}
     </>
   )
 }
 
-export default RouteAboutUs
+export default RouteSignUpSuccess

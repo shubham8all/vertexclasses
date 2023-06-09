@@ -25,6 +25,14 @@
     justify-content: space-between;
 }
 
+.main-success-wrapper {
+    margin-top: 18rem;
+}
+
+.to-down-logo {
+    margin: 8rem;
+}
+
 @media screen and (max-width:1000px) {
     .sign-up-lower-section-wrapper {
         display: none;
