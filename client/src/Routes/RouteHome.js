@@ -6,6 +6,8 @@ import CoursesOffered from '../Components/Jsx/CoursesOffered'
 import Results from '../Components/Jsx/Results'
 import ContactUs from '../Components/Jsx/ContactUs'
 import Footer from '../Components/Jsx/Footer'
+import Signup from '../Components/Jsx/Signup'
+import SignIn from '../Components/Jsx/SignIn'
 
 const RouteHome = () => {
   return (
@@ -16,6 +18,8 @@ const RouteHome = () => {
         <CoursesOffered />
         <Results />
         <ContactUs />
+        <Signup />
+        <SignIn />
         <Footer />
     </>
   )

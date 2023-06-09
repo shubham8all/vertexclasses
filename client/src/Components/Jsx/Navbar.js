@@ -7,7 +7,14 @@ import { NavLink } from 'react-router-dom'
 import { useState,useEffect } from 'react'
 import {FaTimes,FaBars} from 'react-icons/fa'
 import MarqueeModified from '../Jsx/MarqueeModified'
+import { useNavigate } from 'react-router-dom';
+
+
 const Navbar = () => {
+  const navigate = useNavigate();
+  const handleNavigateToSignin=()=>{
+    navigate("/sign-in");
+  }
   const [click,setClick]=useState(false);
   function handleClick()
   {
@@ -50,7 +57,7 @@ const Navbar = () => {
             <li><NavLink to="/admission">Admission</NavLink></li>
             <li><NavLink to="/studentzone">Student Zone</NavLink></li>
             {/* <Button buttonName='Sign In' /> */}
-            <button className='btn'>Sign In</button>
+            <button className='btn' onClick={handleNavigateToSignin}>Sign In</button>
             </div>
             <div className="mobile-menu-icon" onClick={handleClick}>
             {click?

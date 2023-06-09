@@ -7,6 +7,9 @@ import RouteAdmission from "./Routes/RouteAdmission"
 import RouteStudentZone from "./Routes/RouteStudentZone"
 import RouteJuniorDivision from "./Routes/RouteJuniorDivision"
 import NotFound from './Components/Jsx/404'
+import RouteSignUp from './Routes/RouteSignUp'
+import RouteSignUpOTP from './Routes/RouteSignUpOTP'
+import RouteSignIn from './Routes/RouteSignIn'
 
 export default function App() {
   return (
@@ -18,6 +21,9 @@ export default function App() {
         <Route path="/admission" element={<RouteAdmission />}/>
         <Route path="/studentzone" element={<RouteStudentZone />}/>
         <Route path="/junior-division" element={<RouteJuniorDivision />}/>
+        <Route path="/sign-up" element={<RouteSignUp />}/>
+        <Route path="/sign-up/otp" element={<RouteSignUpOTP />}/>
+        <Route path="/sign-in" element={<RouteSignIn />}/>
         <Route path="/*" element={<NotFound />}/>
       </Routes>
     </>

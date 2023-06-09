@@ -28,10 +28,6 @@ const userSchema = new mongoose.Schema({
         // max:10,
         // unique:true
     },
-    profession:{
-        type:String,
-        required:true
-    },
     password:{
         type:String,
         required:true,
@@ -54,8 +50,8 @@ const userSchema = new mongoose.Schema({
 
 userSchema.pre("save",async function(next){     //we using normal function because this. method is not usable in fat arrow function
     if(this.isModified("password")){
-        this.password = bcrypt.hash(this.password,12);
-        this.confirmpassword = bcrypt.hash(this.confirmpassword,12);
+        this.password = await bcrypt.hash(this.password,12);
+        this.confirmpassword = await bcrypt.hash(this.confirmpassword,12);
     }
     next();
 });

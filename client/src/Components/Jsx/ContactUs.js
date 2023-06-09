@@ -63,7 +63,7 @@ const ContactUs = () => {
             <input type='email' id='email' name='email' value={email} onChange={(e) => setEmail(e.target.value)} />
             <br />
             <label htmlFor='message'>Message</label>
-            <input type='text' id='message' name='message' value={message} onChange={(e) => setMessage(e.target.value)} />
+            <textarea type='text' id='message' name='message' value={message} onChange={(e) => setMessage(e.target.value)} />
             <br />
             <div className='newButton'>
               <button className='btn' type='button' onClick={handleSend}>Send ➤</button>
