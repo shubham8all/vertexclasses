@@ -17,7 +17,6 @@ const RouteHome = () => {
         <CoursesOffered />
         <Results />
         <ContactUs />
-        <Signup />
         <Footer />
     </>
   )
