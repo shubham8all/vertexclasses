@@ -53,6 +53,7 @@
     border-radius: 4px;
     justify-content: center;
     margin-right: 2rem;
+    cursor:pointer;
 }
 
 
@@ -72,6 +73,7 @@
     border: 0.5px solid #FC5244;
     border-radius: 4px;
     justify-content: center;
+    cursor:pointer;
 }
 
 .btn-brochure-apply {
