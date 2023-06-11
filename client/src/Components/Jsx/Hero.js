@@ -27,6 +27,7 @@ const Hero = () => {
   // }, []);
   return (
     <>
+    <div className='sign-up-bg'>
      <div className='hero-section'> 
     
         <div className='left-section'>
@@ -56,7 +57,7 @@ const Hero = () => {
         <div className='lower-hero-section'>
         <HeroMarquee />
         </div>
-
+        </div>
     </>
   )
 }

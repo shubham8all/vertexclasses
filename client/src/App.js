@@ -15,6 +15,10 @@ import RouteSignIn from './Routes/RouteSignIn'
 import RouteForgetPassword from './Routes/RouteForgetPassword'
 import RouteSetNewPassword from './Routes/RouteSetNewPassword'
 import RoutePasswordChangedSuccessfully from './Routes/RoutePasswordChangedSuccessfully'
+import Route11th from './Routes/Route11th'
+import Route12th from './Routes/Route12th'
+import Route13th from './Routes/Route13th'
+import RouteTet from './Routes/RouteTet'
 
 export default function App() {
   return (
@@ -34,6 +38,11 @@ export default function App() {
         <Route path="/reset-password" element={<RouteForgetPassword />}/>
         <Route path="/set-new-password" element={<RouteSetNewPassword />}/>
         <Route path="/password-changed-successfully" element={<RoutePasswordChangedSuccessfully />}/>
+        <Route path="/courses/11th" element={<Route11th />}/>
+        <Route path="/courses/12th" element={<Route12th />}/>
+        <Route path="/courses/13th" element={<Route13th />}/>
+        <Route path="/courses/junior-division" element={<RouteJuniorDivision />}/>
+        <Route path="/courses/TET-STET" element={<RouteTet />}/>
         <Route path="/*" element={<NotFound />}/>
       </Routes>
     </>

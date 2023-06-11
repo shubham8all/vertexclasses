@@ -45,6 +45,7 @@ const ContactUs = () => {
   };
 
   return (
+    <div className='sign-up-bg'>
     <div className='contact-us'>
       <p className='contact-us-heading'>Contact Us</p>
       <div className='divider'>
@@ -72,6 +73,7 @@ const ContactUs = () => {
         </div>
       </div>
       <div className='lower-section-contactus'>.</div>
+    </div>
     </div>
   );
 };

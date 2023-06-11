@@ -10,81 +10,113 @@ const MarqueeForSubsection = () => {
         <p>CBSE</p>
         <p>BSEB</p>
         <p>TET/STET</p>
+        <p>NTSE</p>
+        <p>Olympiad</p>
         <p>JEE (Main+Advanced)</p>
         <p>NEET</p>
         <p>CBSE</p>
         <p>BSEB</p>
         <p>TET/STET</p>
+        <p>NTSE</p>
+        <p>Olympiad</p>
         <p>JEE (Main+Advanced)</p>
         <p>NEET</p>
         <p>CBSE</p>
         <p>BSEB</p>
         <p>TET/STET</p>
+        <p>NTSE</p>
+        <p>Olympiad</p>
         <p>JEE (Main+Advanced)</p>
         <p>NEET</p>
         <p>CBSE</p>
         <p>BSEB</p>
         <p>TET/STET</p>
+        <p>NTSE</p>
+        <p>Olympiad</p>
         <p>JEE (Main+Advanced)</p>
         <p>NEET</p>
         <p>CBSE</p>
         <p>BSEB</p>
         <p>TET/STET</p>
+        <p>NTSE</p>
+        <p>Olympiad</p>
         <p>JEE (Main+Advanced)</p>
         <p>NEET</p>
         <p>CBSE</p>
         <p>BSEB</p>
         <p>TET/STET</p>
+        <p>NTSE</p>
+        <p>Olympiad</p>
         <p>JEE (Main+Advanced)</p>
         <p>NEET</p>
         <p>CBSE</p>
         <p>BSEB</p>
         <p>TET/STET</p>
+        <p>NTSE</p>
+        <p>Olympiad</p>
         <p>JEE (Main+Advanced)</p>
         <p>NEET</p>
         <p>CBSE</p>
         <p>BSEB</p>
         <p>TET/STET</p>
+        <p>NTSE</p>
+        <p>Olympiad</p>
         <p>JEE (Main+Advanced)</p>
         <p>NEET</p>
         <p>CBSE</p>
         <p>BSEB</p>
         <p>TET/STET</p>
+        <p>NTSE</p>
+        <p>Olympiad</p>
         <p>JEE (Main+Advanced)</p>
         <p>NEET</p>
         <p>CBSE</p>
         <p>BSEB</p>
         <p>TET/STET</p>
+        <p>NTSE</p>
+        <p>Olympiad</p>
         <p>JEE (Main+Advanced)</p>
         <p>NEET</p>
         <p>CBSE</p>
         <p>BSEB</p>
         <p>TET/STET</p>
+        <p>NTSE</p>
+        <p>Olympiad</p>
         <p>JEE (Main+Advanced)</p>
         <p>NEET</p>
         <p>CBSE</p>
         <p>BSEB</p>
         <p>TET/STET</p>
+        <p>NTSE</p>
+        <p>Olympiad</p>
         <p>JEE (Main+Advanced)</p>
         <p>NEET</p>
         <p>CBSE</p>
         <p>BSEB</p>
         <p>TET/STET</p>
+        <p>NTSE</p>
+        <p>Olympiad</p>
         <p>JEE (Main+Advanced)</p>
         <p>NEET</p>
         <p>CBSE</p>
         <p>BSEB</p>
         <p>TET/STET</p>
+        <p>NTSE</p>
+        <p>Olympiad</p>
         <p>JEE (Main+Advanced)</p>
         <p>NEET</p>
         <p>CBSE</p>
         <p>BSEB</p>
         <p>TET/STET</p>
+        <p>NTSE</p>
+        <p>Olympiad</p>
         <p>JEE (Main+Advanced)</p>
         <p>NEET</p>
         <p>CBSE</p>
         <p>BSEB</p>
         <p>TET/STET</p>
+        <p>NTSE</p>
+        <p>Olympiad</p>
         <p>JEE (Main+Advanced)</p>
         <p>NEET</p>
         <p>CBSE</p>

@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
 
-.subsection{
+.subsection {
     background: #1E1E1E;
+    min-height: 1000px;
+    background-image: url('../svgs/background.svg');
+    background-size: cover;
+    /* or contain, or specific dimensions */
+    background-repeat: no-repeat;
+    /* or repeat-x, repeat-y, or repeat */
+    background-position: center center;
+    /* or top, bottom, left, right */
 }
 
-.heading-subsection{
+.heading-subsection {
     font-family: 'Titillium Web';
     font-style: normal;
     font-weight: 700;
@@ -13,22 +21,22 @@
     letter-spacing: 0.05em;
     color: #FF8D32;
     margin-left: 4rem;
-    margin-top:10rem;
+    margin-top: 10rem;
 }
 
-.subsection-content{
-font-family: 'Titillium Web';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 37px;
-letter-spacing: 0.05em;
-color:#929292;
-margin-left: 4rem;
-margin-right: 4rem;
+.subsection-content {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+    color: #929292;
+    margin-left: 4rem;
+    margin-right: 4rem;
 }
 
-.btn-brochure{
+.btn-brochure {
     box-sizing: border-box;
     display: flex;
     font-family: 'google-sans-regular';
@@ -48,7 +56,7 @@ margin-right: 4rem;
 }
 
 
-.btn-apply{
+.btn-apply {
     box-sizing: border-box;
     display: flex;
     font-family: 'google-sans-regular';
@@ -59,33 +67,34 @@ margin-right: 4rem;
     color: #151515;
     width: 137px;
     height: 48px;
-    background-color:#FC5244;
+    background-color: #FC5244;
     align-items: center;
     border: 0.5px solid #FC5244;
     border-radius: 4px;
     justify-content: center;
 }
 
-.btn-brochure-apply{
+.btn-brochure-apply {
     display: flex;
     justify-content: center;
     margin-bottom: 4rem;
 }
 
 @media screen and (max-width:1000px) {
-.heading-subsection{
-    font-size: 40px;
-    margin-left: 2rem;
-    margin-top: 8rem;
-}
+    .heading-subsection {
+        font-size: 40px;
+        margin-left: 2rem;
+        margin-top: 8rem;
+    }
 
-    .subsection-content{
-        margin-left:2rem;
-        margin-right:1rem;
+    .subsection-content {
+        margin-left: 2rem;
+        margin-right: 1rem;
         font-size: 18px;
     }
 
-    .btn-brochure,.btn-apply{
+    .btn-brochure,
+    .btn-apply {
         font-size: 15px;
     }
 }

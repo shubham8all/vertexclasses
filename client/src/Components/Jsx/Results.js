@@ -8,6 +8,7 @@ import CarouselLong from './CarouselLong'
 const Results = () => {
   return (
     <>
+    <div className='sign-up-bg'>
         <p className='our-results'>Our Results</p>
         {/* <img src={OurResults} alt="Our Results"/> */}
         {/* <div className='images'>
@@ -17,6 +18,7 @@ const Results = () => {
         <CarouselLong />
         <div className='lower-section-results'>
             .
+        </div>
         </div>
     </>
   )

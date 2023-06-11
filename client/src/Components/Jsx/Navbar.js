@@ -53,7 +53,25 @@ const Navbar = () => {
             <div className={click?'nav-items-mobile':'nav-items'}>
             <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/aboutus">AboutUs</NavLink></li>
-            <li><NavLink to="/courses">Courses</NavLink></li>
+            <li><NavLink to="/courses">Courses</NavLink>
+            <ul className='sub-menu'>
+                <li>
+                  <NavLink to='/courses/11th'>11th</NavLink>
+                </li>
+                <li>
+                  <NavLink to='/courses/12th'>12th</NavLink>
+                </li>
+                <li>
+                  <NavLink to='/courses/13th'>13th</NavLink>
+                </li>
+                <li>
+                  <NavLink to='/courses/junior-division'>Junior Division</NavLink>
+                </li>
+                <li>
+                  <NavLink to='/courses/'>TET/STET</NavLink>
+                </li>
+              </ul>
+            </li>
             <li><NavLink to="/admission">Admission</NavLink></li>
             <li><NavLink to="/studentzone">Student Zone</NavLink></li>
             {/* <Button buttonName='Sign In' /> */}

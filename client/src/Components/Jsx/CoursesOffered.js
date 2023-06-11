@@ -8,6 +8,7 @@ import JuniorDivision from '../svgs/JuniorDivision.svg'
 const CoursesOffered = () => {
   return (
     <>
+    <div className='sign-up-bg'>
         <p className='title-courses-offered'>Courses Offered</p>
         <div className='courses-offered'>
         <div className='course-offered'>
@@ -24,6 +25,7 @@ const CoursesOffered = () => {
         </div>
         </div>
         <div className='lower-section-coursesoffered'>.</div>
+        </div>
     </>
   )
 }

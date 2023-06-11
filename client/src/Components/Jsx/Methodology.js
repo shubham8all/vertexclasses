@@ -5,6 +5,7 @@ import MethodologyCard from './MethodologyCard'
 const Methodology = () => {
   return (
     <>
+    <div className='sign-up-bg'>
         <p className='title-methodology'>Our Methodology</p>
         <div className='methodology-cards'>
         <div className='for-space'>
@@ -21,6 +22,7 @@ const Methodology = () => {
           </div>
         </div>
         <div className='lower-section-methodology'></div>
+        </div>
     </>
   )
 }
