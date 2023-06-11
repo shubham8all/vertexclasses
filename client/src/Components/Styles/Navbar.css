@@ -99,7 +99,8 @@ li {
     display: none;
 }
 
-.sub-menu {
+/*handling sub-menu of courses*/
+.sub-menu-courses {
     opacity: 0;
     visibility: hidden;
     position: absolute;
@@ -113,23 +114,93 @@ li {
     transition: opacity 1s, visibility 1s;
 }
 
-.nav-items li:hover>.sub-menu,
-.sub-menu:hover {
+.nav-items li:hover>.sub-menu-courses,
+.sub-menu-courses:hover {
     opacity: 1;
     visibility: visible;
 }
 
-.sub-menu li {
+.sub-menu-courses li {
     display: block;
     padding: 10px;
 }
 
-.sub-menu li a {
+.sub-menu-courses li a {
     color: #FFFFFF;
     text-decoration: none;
 }
 
-.sub-menu li a:hover {
+.sub-menu-courses li a:hover {
+    color: #fcd444;
+}
+
+/*handling sub-menu of admission*/
+.sub-menu-admission {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #363636;
+    padding: 10px;
+    top: 100%;
+    left: 68%;
+    z-index: 1;
+    width: 280px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: opacity 1s, visibility 1s;
+}
+
+.nav-items li:hover>.sub-menu-admission,
+.sub-menu-admission:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sub-menu-admission li {
+    display: block;
+    padding: 10px;
+}
+
+.sub-menu-admission li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.sub-menu-admission li a:hover {
+    color: #fcd444;
+}
+
+/*handling sub-menu of student zone*/
+.sub-menu-student-zone {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #363636;
+    padding: 10px;
+    top: 100%;
+    left: 77%;
+    z-index: 1;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: opacity 1s, visibility 1s;
+}
+
+.nav-items li:hover>.sub-menu-student-zone,
+.sub-menu-student-zone:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sub-menu-student-zone li {
+    display: block;
+    padding: 10px;
+}
+
+.sub-menu-student-zone li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.sub-menu-student-zone li a:hover {
     color: #fcd444;
 }
 

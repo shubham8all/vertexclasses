@@ -54,26 +54,53 @@ const Navbar = () => {
             <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/aboutus">AboutUs</NavLink></li>
             <li><NavLink to="/courses">Courses</NavLink>
-            <ul className='sub-menu'>
+            <ul className='sub-menu-courses'>
                 <li>
-                  <NavLink to='/courses/11th'>11th</NavLink>
+                  <NavLink to='/courses/11th'>Class XI</NavLink>
                 </li>
                 <li>
-                  <NavLink to='/courses/12th'>12th</NavLink>
+                  <NavLink to='/courses/12th'>Class XII</NavLink>
                 </li>
                 <li>
-                  <NavLink to='/courses/13th'>13th</NavLink>
+                  <NavLink to='/courses/13th'>Class XIII</NavLink>
                 </li>
                 <li>
                   <NavLink to='/courses/junior-division'>Junior Division</NavLink>
                 </li>
                 <li>
-                  <NavLink to='/courses/'>TET/STET</NavLink>
+                  <NavLink to='/courses/TET-STET'>TET/STET</NavLink>
                 </li>
               </ul>
             </li>
-            <li><NavLink to="/admission">Admission</NavLink></li>
-            <li><NavLink to="/studentzone">Student Zone</NavLink></li>
+            <li><NavLink to="/admission">Admission</NavLink>
+            <ul className='sub-menu-admission'>
+                <li>
+                  <NavLink to='/admission/admissionprocess'>Admission Process</NavLink>
+                </li>
+                <li>
+                  <NavLink to='/admission/applyonline'>Apply Online</NavLink>
+                </li>
+                <li>
+                  <NavLink to='/admission/applyforcrashcourse'>Apply for Crash Courses</NavLink>
+                </li>
+              </ul>
+            </li>
+            <li><NavLink to="/studentzone">Student Zone</NavLink>
+            <ul className='sub-menu-student-zone'>
+                <li>
+                  <NavLink to='/studentzone/downloads'>Downloads</NavLink>
+                </li>
+                <li>
+                  <NavLink to='/studentzone/payonline'>Pay Online</NavLink>
+                </li>
+                <li>
+                  <NavLink to='/studentzone/samplepapers'>Sample Papers</NavLink>
+                </li>
+                <li>
+                  <NavLink to='/studentzone/results'>Results</NavLink>
+                </li>
+              </ul>
+            </li>
             {/* <Button buttonName='Sign In' /> */}
             <button className='btn' onClick={handleNavigateToSignin}>Sign In</button>
             </div>
