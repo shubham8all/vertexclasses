@@ -1,8 +1,13 @@
 import React from 'react'
 import '../Styles/Subsection.css'
 import MarqueeForSubsection from './MarqueeForSubsection';
+import { useNavigate } from 'react-router-dom';
 
 const Subsection13th = () => {
+    const navigate = useNavigate();
+    const handleNavigateToRegistrationPanel=()=>{
+        navigate("/courses/13th/registration");
+      }
     return (
         <>
         <div className='subsection'>
@@ -21,7 +26,7 @@ With experienced faculty, comprehensive study materials, and regular assessments
             </p>
             <div className='btn-brochure-apply'>
             <button className='btn-brochure'>Brochure 23-24</button>
-            <button className='btn-apply'>Apply Now</button>
+            <button className='btn-apply' onClick={handleNavigateToRegistrationPanel}>Apply Now</button>
             </div>
             </div>
         </>

@@ -1,69 +1,137 @@
 import React from 'react';
 import { useState } from 'react';
 import '../Styles/SignUpCard.css';
-import GoogleLogo from '../svgs/GoogleLogo.svg';
-import { NavLink } from 'react-router-dom';
+import '../Styles/Registration.css';
 import { useNavigate } from 'react-router-dom';
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
-const SignUpCard = () => {
+
+const Registration = () => {
   const navigate = useNavigate();
     const [name, setName] = useState('');
+	const [mothersName, setMothersName] = useState('');
+    const [fathersName, setFathersName] = useState('');
+    const [gender, setGender] = useState('');
+    const [course, setCourse] = useState('');
+    const [dob, setDob] = useState();
+    const [standard, setStandard] = useState('');
 	const [countryCode, setCountryCode] = useState('91');
-    const [mobileNo, setMobileNo] = useState('');
+	const [mobileNo, setMobileNo] = useState('');
     const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [confirmpassword, setconfirmpassword] = useState('');
   
-    const handleRegister = async(e) => {
+    const handleRegisterCourse = async(e) => {
       e.preventDefault(); // Prevent form submission and page refresh
       // console.log('Name:', name);
       // console.log('Mobile No:', mobileNo);
       // console.log('Email:', email);
       // console.log('Message:', message);
       setName("");
+	  setFathersName("");
+      setMothersName("");
+      setDob("");
+      setGender("");
+      setCourse("");
+      setStandard("");
       setCountryCode("");
       setMobileNo("");
       setEmail("");
-      setPassword("");
-      setconfirmpassword("");
-      const res= await fetch("/sign-up",{
+      const res= await fetch("/registration",{
         method:"POST",
         headers:{
           "Content-Type" : "application/json",
         },
         body:JSON.stringify({
           name:name,
+		  fathersName:fathersName,
+		  mothersName:mothersName,
+		  dob:dob,
 		  countryCode:countryCode,
+		  gender:gender,
+		  course:course,
+		  standard:standard,
           phone:mobileNo,
           email:email,
-          password:password,
-          confirmpassword:confirmpassword
         }),
       });
   
     //   const data = await res.json();
       if (res.ok) {
         // alert("You have been successfully registered :)");
-		navigate("/successfully-registered");
+		navigate("/registration/registration-successful");
       } else {
         alert("BAD Request, please fill in all the entries properly");
       }
     };
   return (
-    <div className='sign-up-card-container'>
-    <span className='heading-sign-up'>Sign Up</span>
+	<div className='sign-up-bg'>
+    <div className='sign-up-card-container registration-card-container'>
+	<div className='registration-wrapper'>
+    <span className='heading-sign-up heading-registration'>Student Registration Panel</span>
     <form method='POST'>
       <div className='form-group'>
         <label htmlFor='name'>Name:</label>
         <input type='text' className='sign-up-name' name='name' value={name} onChange={(e) => setName(e.target.value)}/>
       </div>
+	  <div className='form-group'>
+        <label htmlFor='name'>Mother Name:</label>
+        <input type='text' className='sign-up-name' name='mothersName' value={mothersName} onChange={(e) => setMothersName(e.target.value)}/>
+      </div>
+	  <div className='form-group'>
+        <label htmlFor='name'>Father Name:</label>
+        <input type='text' className='sign-up-name' name='fathersName' value={fathersName} onChange={(e) => setFathersName(e.target.value)}/>
+      </div>
+	  <div className='form-group'>
+	  <label htmlFor='dob'>DoB:</label>
+	  <div className='sign-up-name1'>
+	  <DatePicker className='designer-dob' selected={dob} onChange={(date) => setDob(date)}/>
+	  </div>
+	  </div>
+	  <div className='form-group'>
+	  <label htmlFor='gender'>Gender:</label>
+	  <div>
+		<select className='sign-up-name1' name='gender' value={gender} onChange={(e)=>setGender(e.target.value)}>
+		<option value="none">--</option>
+		<option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Transgender">Transgender</option>
+        <option value="Prefer not to say">Prefer not to say</option>
+		</select>
+	</div>
+	</div>
+	<div className='form-group'>
+	  <label htmlFor='name'>Target Examination:</label>
+	  <div>
+		<select className='sign-up-name1' name='course' value={course} onChange={(e)=>setCourse(e.target.value)}>
+		<option value="none">--</option>
+		<option value="JEE">JEE</option>
+        <option value="NEET">NEET</option>
+        <option value="NTSE">NTSE</option>
+        <option value="KVPY">KVPY</option>
+        <option value="TET/STET">TET/STET</option>
+		</select>
+	</div>
+	</div>
+	<div className='form-group'>
+	  <label htmlFor='name'>Class:</label>
+	  <div>
+		<select className='sign-up-name1' name='standard' value={standard} onChange={(e)=>setStandard(e.target.value)}>
+		<option value="none">--</option>
+		<option value="JEE">9th</option>
+		<option value="JEE">10th</option>
+		<option value="JEE">11th</option>
+        <option value="NEET">12th</option>
+        <option value="NTSE">13th</option>
+		</select>
+	</div>
+	</div>
       <div className='form-group'>
         <label htmlFor='phone'>Phone:</label>
         <div className='phone-input-group'>
           <div className='country-code-dropdown'>
-		  <select id='country-code' className='country-code-select' name='countryCode' value={countryCode} onChange={(e)=>setCountryCode(e.target.value)}>
+<select id='country-code' className='country-code-select' name='countryCode' value={countryCode} onChange={(e)=>setCountryCode(e.target.value)}>
 		<option data-countryCode="IN" value="91">India (+91)</option>
-        <option data-countryCode="DZ" value="213">Algeria (+213)</option>
+            <option data-countryCode="DZ" value="213">Algeria (+213)</option>
 		<option data-countryCode="AD" value="376">Andorra (+376)</option>
 		<option data-countryCode="AO" value="244">Angola (+244)</option>
 		<option data-countryCode="AI" value="1264">Anguilla (+1264)</option>
@@ -276,7 +344,7 @@ const SignUpCard = () => {
 		<option data-countryCode="YE" value="967">Yemen (South)(+967)</option>
 		<option data-countryCode="ZM" value="260">Zambia (+260)</option>
 		<option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
-            </select>
+			</select>
           </div>
           <input type='number' className='sign-up-phone-number' name='mobileNo' value={mobileNo} onChange={(e) => setMobileNo(e.target.value)}/>
         </div>
@@ -285,32 +353,14 @@ const SignUpCard = () => {
         <label htmlFor='email'>Email-Id:</label>
         <input type='email' className='sign-up-email' name='email' value={email} onChange={(e) => setEmail(e.target.value)}/>
       </div>
-      <div className='form-group'>
-        <label htmlFor='password'>Password:</label>
-        <input type='password' className='sign-up-password' name='password' value={password} onChange={(e) => setPassword(e.target.value)}/>
-      </div>
-      <div className='form-group'>
-        <label htmlFor='confirm-password' className='confirmpassword-label'>Confirm Password:</label>
-        <input
-          type='password'
-          className='sign-up-confirmpassword'
-          name='confirmpassword' value={confirmpassword} onChange={(e) => setconfirmpassword(e.target.value)}
-        />
-      </div>
       </form>
       <div className='sign-up-buttons'>
-        <button className='btn-sign-up-with-google'><span><img src={GoogleLogo} alt="google-logo" /></span><span>Sign Up with Google</span></button>
-        <button className='sign-up-register' onClick={handleRegister}>Register</button>
-      </div>
-      <div className='extreme-lower-section'>
-        <p className='already-have-an-account'>Already have an Account?</p>
-		<div className='to-seperate'>
-        <NavLink to="/sign-in" className='sign-in-redirect'>Sign in</NavLink>
-        <NavLink to="/" className='sign-in-redirect'>Home</NavLink>
+        <button className='sign-up-register' onClick={handleRegisterCourse}>Register</button>
       </div>
 	  </div>
     </div>
+	</div>
   );
 };
 
-export default SignUpCard;
+export default Registration;

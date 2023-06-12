@@ -1,8 +1,13 @@
 import React from 'react'
 import '../Styles/Subsection.css'
 import MarqueeForSubsection from './MarqueeForSubsection';
+import { useNavigate } from 'react-router-dom';
 
-const Subsection12th = () => {
+const SubsectionTETSTET = () => {
+    const navigate = useNavigate();
+    const handleNavigateToRegistrationPanel=()=>{
+        navigate("/courses/TET-STET/registration");
+      }
     return (
         <>
         <div className='subsection'>
@@ -17,11 +22,11 @@ With experienced faculty and comprehensive study materials, the course focuses o
             </p>
             <div className='btn-brochure-apply'>
             <button className='btn-brochure'>Brochure 23-24</button>
-            <button className='btn-apply'>Apply Now</button>
+            <button className='btn-apply' onClick={handleNavigateToRegistrationPanel}>Apply Now</button>
             </div>
             </div>
         </>
     )
 }
  
-export default Subsection12th;
+export default SubsectionTETSTET;

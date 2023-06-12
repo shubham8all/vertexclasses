@@ -19,6 +19,9 @@ import Route11th from './Routes/Route11th'
 import Route12th from './Routes/Route12th'
 import Route13th from './Routes/Route13th'
 import RouteTet from './Routes/RouteTet'
+import RouteRegistration from './Routes/RouteRegistration'
+import RouteRegistrationSuccessful from './Routes/RouteRegistrationSuccessful'
+
 
 export default function App() {
   return (
@@ -29,6 +32,7 @@ export default function App() {
         <Route path="/aboutus" element={<RouteAboutUs />}/> 
         <Route path="/courses" element={<RouteCourses />}/> 
         <Route path="/admission" element={<RouteAdmission />}/>
+        <Route path="/admission/admissionprocess" element={<RouteAdmission />}/>
         <Route path="/studentzone" element={<RouteStudentZone />}/>
         <Route path="/junior-division" element={<RouteJuniorDivision />}/>
         <Route path="/sign-up" element={<RouteSignUp />}/>
@@ -40,9 +44,15 @@ export default function App() {
         <Route path="/password-changed-successfully" element={<RoutePasswordChangedSuccessfully />}/>
         <Route path="/courses/11th" element={<Route11th />}/>
         <Route path="/courses/12th" element={<Route12th />}/>
+        <Route path="/courses/TET-STET" element={<RouteTet />}/>
         <Route path="/courses/13th" element={<Route13th />}/>
         <Route path="/courses/junior-division" element={<RouteJuniorDivision />}/>
-        <Route path="/courses/TET-STET" element={<RouteTet />}/>
+        <Route path="/courses/11th/registration" element={<RouteRegistration />}/>
+        <Route path="/courses/12th/registration" element={<RouteRegistration />}/>
+        <Route path="/courses/13th/registration" element={<RouteRegistration />}/>
+        <Route path="/courses/junior-division/registration" element={<RouteRegistration />}/>
+        <Route path="/courses/TET-STET/registration" element={<RouteRegistration />}/>
+        <Route path="/registration/registration-successful" element={<RouteRegistrationSuccessful />}/>
         <Route path="/*" element={<NotFound />}/>
       </Routes>
     </>

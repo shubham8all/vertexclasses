@@ -1,8 +1,13 @@
 import React from 'react'
 import '../Styles/Subsection.css'
 import MarqueeForSubsection from './MarqueeForSubsection';
+import { useNavigate } from 'react-router-dom';
 
 const Subsection12th = () => {
+    const navigate = useNavigate();
+    const handleNavigateToRegistrationPanel=()=>{
+      navigate("/courses/12th/registration");
+    }
     return (
         <>
         <div className='subsection'>
@@ -19,7 +24,7 @@ Additionally, Vertex Classes offers courses aligned with the CBSE and BSEB curri
             </p>
             <div className='btn-brochure-apply'>
             <button className='btn-brochure'>Brochure 23-24</button>
-            <button className='btn-apply'>Apply Now</button>
+            <button className='btn-apply' onClick={handleNavigateToRegistrationPanel}>Apply Now</button>
             </div>
             </div>
         </>

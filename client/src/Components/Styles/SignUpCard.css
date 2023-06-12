@@ -212,6 +212,22 @@ label {
     margin-right: 18px;
 }
 
+.sign-up-name1 {
+    width: 421px;
+    height: 48px;
+    background: #D3D3D3;
+    border-radius: 6px;
+    margin-left: 6rem;
+}
+
+
+.designer-dob {
+    width: 415px;
+    height: 43px;
+    background: #D3D3D3;
+    border-radius: 6px;
+}
+
 @media screen and (max-width:800px) {
 
     .sign-up-card-container {
@@ -285,6 +301,21 @@ label {
     .sign-up-confirmpassword {
         width: 225.54px;
         height: 28.02px;
+        background: #D3D3D3;
+        border-radius: 6px;
+    }
+
+    .sign-up-name1 {
+        width: 230.54px;
+        height: 32.02px;
+        background: #D3D3D3;
+        border-radius: 6px;
+        margin-left: 5rem;
+    }
+
+    .designer-dob {
+        width: 230.54px;
+        height: 32.02px;
         background: #D3D3D3;
         border-radius: 6px;
     }

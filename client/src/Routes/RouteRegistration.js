@@ -1,16 +1,16 @@
 import React from 'react'
 import Navbar from '../Components/Jsx/Navbar'
 import Footer from '../Components/Jsx/Footer'
-import Admission from '../Components/Jsx/Admission'
+import Registration from '../Components/Jsx/Registration'
 
-const RouteAdmission = () => {
+const RouteRegistration = () => {
   return (
     <>
     <Navbar />
-    <Admission />
+    <Registration />
     <Footer />
     </>
   )
 }
 
-export default RouteAdmission
+export default RouteRegistration
