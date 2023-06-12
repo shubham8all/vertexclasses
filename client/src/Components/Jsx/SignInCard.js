@@ -38,7 +38,7 @@ const SignUpCard = () => {
     //   const data = await res.json();
       if (res.ok) {
         // alert("You are successfully signed in:)");
-        navigate("/home-student");
+        navigate("/");
       } else {
         alert("Invalid Credentials");
       }

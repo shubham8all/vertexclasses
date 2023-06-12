@@ -1,7 +1,6 @@
 import React from 'react'
 import {Routes,Route} from 'react-router-dom'
 import RouteHome from "./Routes/RouteHome"
-import RouteHomeStudent from "./Routes/RouteHomeStudent"
 import RouteAboutUs from "./Routes/RouteAboutUs"
 import RouteCourses from "./Routes/RouteCourses"
 import RouteAdmission from "./Routes/RouteAdmission"
@@ -21,15 +20,14 @@ import Route13th from './Routes/Route13th'
 import RouteTet from './Routes/RouteTet'
 import RouteRegistration from './Routes/RouteRegistration'
 import RouteRegistrationSuccessful from './Routes/RouteRegistrationSuccessful'
+import RouteLogout from './Routes/RouteLogout'
 
 
 export default function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<RouteHome />}/>
-        <Route path="/home-student" element={<RouteHomeStudent />}/>
-        <Route path="/aboutus" element={<RouteAboutUs />}/> 
+        <Route path="/" element={<RouteHome />}/>        <Route path="/aboutus" element={<RouteAboutUs />}/> 
         <Route path="/courses" element={<RouteCourses />}/> 
         <Route path="/admission" element={<RouteAdmission />}/>
         <Route path="/admission/admissionprocess" element={<RouteAdmission />}/>
@@ -53,6 +51,7 @@ export default function App() {
         <Route path="/courses/junior-division/registration" element={<RouteRegistration />}/>
         <Route path="/courses/TET-STET/registration" element={<RouteRegistration />}/>
         <Route path="/registration/registration-successful" element={<RouteRegistrationSuccessful />}/>
+        <Route path="/logout" element={<RouteLogout />}/>
         <Route path="/*" element={<NotFound />}/>
       </Routes>
     </>

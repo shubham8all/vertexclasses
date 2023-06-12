@@ -11,10 +11,50 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Navbar = () => {
+  const [isLogged,setIsLogged]=useState(false);
+
+  const checkIfLoggedIn = async() =>{
+    try{
+        const res = await fetch('/studentzone',{
+            method:"GET",
+            headers:{
+                Accept:"application/json",
+                "Content-Type":"application/json"
+            },
+            credentials:"include"
+        });
+        const data = await res.json();
+        
+        if(res.ok)
+        {
+            console.log("Student has logged in and the student zone page is active");
+            setIsLogged(true);
+        }
+        else
+        {
+            //if error means the user isn't logged in
+            const error = new Error(res.error);
+            throw error;
+            setIsLogged(false);
+        }
+    }catch(err){
+        console.log("The page isn't logged in");
+    }
+}
+
+useEffect(()=>{
+    checkIfLoggedIn();
+},[]);
+
   const navigate = useNavigate();
   const handleNavigateToSignin=()=>{
     navigate("/sign-in");
   }
+
+  const handleNavigateToLogout=()=>{
+    navigate("/logout");
+  }
+
   const [click,setClick]=useState(false);
   function handleClick()
   {
@@ -102,7 +142,11 @@ const Navbar = () => {
               </ul>
             </li>
             {/* <Button buttonName='Sign In' /> */}
+            {
+              isLogged?
+            <button className='btn' onClick={handleNavigateToLogout}>Logout</button>:
             <button className='btn' onClick={handleNavigateToSignin}>Sign In</button>
+            }
             </div>
             <div className="mobile-menu-icon" onClick={handleClick}>
             {click?
