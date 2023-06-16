@@ -17,11 +17,11 @@ const cookieParser = require("cookie-parser");
 app.use(cookieParser());
 
 //accessing front-end static files
-app.use(express.static(path.join(__dirname,"./client/build")));
+// app.use(express.static(path.join(__dirname,"./client/build")));
 
-app.get("*",(req,res)=>{
-    res.sendFile(path.join(__dirname,"./client/build/index.html"));
-})
+// app.get("*",(req,res)=>{
+//     res.sendFile(path.join(__dirname,"./client/build/index.html"));
+// })
 
 // Enable CORS for all routes
 app.use(cors({

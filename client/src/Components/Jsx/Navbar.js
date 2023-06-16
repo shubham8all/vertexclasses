@@ -12,33 +12,40 @@ import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [isLogged,setIsLogged]=useState(false);
+  const [user,setUser]=useState({});
 
   const checkIfLoggedIn = async() =>{
     try{
         const res = await fetch('/studentzone',{
             method:"GET",
             headers:{
-                Accept:"application/json",
+                "Accept":"application/json",
                 "Content-Type":"application/json"
             },
             credentials:"include"
         });
+
         const data = await res.json();
+        if(data){
+        setIsLogged(true);
+        setUser(data);
+        }
+        else{
+        setIsLogged(false);
+        }
         
         if(res.ok)
         {
             console.log("Student has logged in and the student zone page is active");
-            setIsLogged(true);
         }
         else
         {
             //if error means the user isn't logged in
             const error = new Error(res.error);
             throw error;
-            setIsLogged(false);
         }
     }catch(err){
-        console.log("The page isn't logged in");
+        console.log(err);
     }
 }
 
@@ -91,7 +98,11 @@ useEffect(()=>{
         <div className={navbarColour?"navbar heading-bg":"navbar"}>
             <div className='nav-logo'><span className='vertex'>Vertex</span><span> </span><span className='classes'>Classes</span></div>
             <div className={click?'nav-items-mobile':'nav-items'}>
+            {
+              isLogged?
+            <li><NavLink to="/">Welcome, {user.name}</NavLink></li>:
             <li><NavLink to="/">Home</NavLink></li>
+            }
             <li><NavLink to="/aboutus">AboutUs</NavLink></li>
             <li><NavLink to="/courses">Courses</NavLink>
             <ul className='sub-menu-courses'>

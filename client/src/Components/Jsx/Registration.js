@@ -108,6 +108,7 @@ const Registration = () => {
         <option value="NEET">NEET</option>
         <option value="NTSE">NTSE</option>
         <option value="KVPY">KVPY</option>
+        <option value="Junior Division">Junior Division</option>
         <option value="TET/STET">TET/STET</option>
 		</select>
 	</div>
@@ -117,6 +118,9 @@ const Registration = () => {
 	  <div>
 		<select className='sign-up-name1' name='standard' value={standard} onChange={(e)=>setStandard(e.target.value)}>
 		<option value="none">--</option>
+		<option value="JEE">6th</option>
+		<option value="JEE">7th</option>
+		<option value="JEE">8th</option>
 		<option value="JEE">9th</option>
 		<option value="JEE">10th</option>
 		<option value="JEE">11th</option>
