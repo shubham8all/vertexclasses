@@ -4,6 +4,9 @@ import '../Styles/SignUpCard.css';
 import GoogleLogo from '../svgs/GoogleLogo.svg';
 import { NavLink } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import { GoogleOAuthProvider } from '@react-oauth/google';
+import { GoogleLogin } from '@react-oauth/google';
+import jwt_decode from "jwt-decode";
 
 const SignUpCard = () => {
   const navigate = useNavigate();
@@ -299,8 +302,19 @@ const SignUpCard = () => {
       </div>
       </form>
       <div className='sign-up-buttons'>
-        <button className='btn-sign-up-with-google'><span><img src={GoogleLogo} alt="google-logo" /></span><span>Sign Up with Google</span></button>
-        <button className='sign-up-register' onClick={handleRegister}>Register</button>
+        {/* <button className='btn-sign-up-with-google'><span><img src={GoogleLogo} alt="google-logo" /></span><span>Sign Up with Google</span></button> */}
+        <GoogleOAuthProvider clientId="750833495982-bh3d4c4n2b1v9fkenua4a3li33ml42ih.apps.googleusercontent.com">
+				<GoogleLogin
+					onSuccess={credentialResponse => {
+						var decoded = jwt_decode(credentialResponse.credential);
+						navigate("/sign-in");
+					}}
+					onError={() => {
+						console.log('Login Failed');
+					}}
+				/>;
+		</GoogleOAuthProvider>;
+		<button className='sign-up-register' onClick={handleRegister}>Register</button>
       </div>
       <div className='extreme-lower-section'>
         <p className='already-have-an-account'>Already have an Account?</p>

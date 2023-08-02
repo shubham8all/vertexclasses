@@ -1,6 +1,7 @@
 import React, { useEffect,useState} from 'react'
 import '../Styles/StudentZone.css'
 import { useNavigate } from 'react-router-dom';
+import ClassmateSection from './ClassmateSection';
 
 const StudentZone = () => {
     const [studentData,setStudentData] = useState({});
@@ -45,6 +46,7 @@ const StudentZone = () => {
         <h1>NAME:{studentData.name}</h1>
         <h1>Mobile No:{studentData.phone}</h1>
         <h1>Email:{studentData.email}</h1>
+        <ClassmateSection />
     </>
   )
 }

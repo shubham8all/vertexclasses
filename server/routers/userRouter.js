@@ -103,6 +103,20 @@ router.get("/logout",(req,res)=>{
   res.status(200).send("User Logout");
 });
 
+
+//getting the classmates details
+router.get('/api/classmates', async (req, res) => {
+  try {
+    // Fetch student details from the database
+    const students = await User.find({});
+    res.json(students);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
+
+
 module.exports = router;
 
 

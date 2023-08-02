@@ -5,7 +5,9 @@ import GoogleLogo from '../svgs/GoogleLogo.svg';
 import SignInUserLogo from '../svgs/SignInUserLogo.svg';
 import { NavLink } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-
+import { GoogleOAuthProvider } from '@react-oauth/google';
+import { GoogleLogin } from '@react-oauth/google';
+import jwt_decode from "jwt-decode";
 
 const SignUpCard = () => {
   const navigate = useNavigate();
@@ -60,7 +62,21 @@ const SignUpCard = () => {
       </div>
       </form>
         <button className='sign-in-register' onClick={handleSignIn}>Sign In</button>
-        <button className='btn-sign-in-with-google'><span><img src={GoogleLogo} alt="google-logo" /></span><span className='sign-in-with-google'>Sign In with Google</span></button>
+        {/* <button className='btn-sign-in-with-google'><span><img src={GoogleLogo} alt="google-logo" /></span><span className='sign-in-with-google'>Sign In with Google</span></button> */}
+        <div className='to-left'>
+        <GoogleOAuthProvider clientId="750833495982-bh3d4c4n2b1v9fkenua4a3li33ml42ih.apps.googleusercontent.com">
+				<GoogleLogin
+					onSuccess={credentialResponse => {
+						var decoded = jwt_decode(credentialResponse.credential);  //decoding the credentials as we get credentials in encrypted format
+            console.log(decoded);
+						navigate("/sign-in");
+					}}
+					onError={() => {
+						console.log('Login Failed');
+					}}
+				/>;
+		    </GoogleOAuthProvider>;
+        </div>
       <div className='extreme-lower-section-sign-in'>
       <div>
         <NavLink to="/reset-password" className='forgot-your-password'>Forgot Your Password?</NavLink>
