@@ -1,0 +1,9 @@
+add login options based on phone number as well
+google auth
+password change
+cookies set-up
+otp verification
+location add in the home section
+how to start page from the very beginning, right now it is starting from the place from where we click
+after signin hide signup page from the hero section
+add junior section in the student registration panel and add classes from 6th onwards
