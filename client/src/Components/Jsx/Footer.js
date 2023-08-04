@@ -37,10 +37,10 @@ const Footer = () => {
                 <li className='first-section-first'>
                     <div className='socials'>
                     <a href="https://www.facebook.com/vertex.classes.31?mibextid=ZbWKwL/" rel="noreferrer" target="_blank"><FaFacebook size={20} style={{color:"white",marginRight:"1rem"}} /></a>
-                    <a href="https://www.instagram.com/ipranavprashant/" rel="noreferrer" target="_blank"><FaInstagram size={20} style={{color:"white",marginRight:"1rem"}} /></a>
-                    <a href="https://www.instagram.com/ipranavprashant/" rel="noreferrer" target="_blank"><FaYoutube size={20} style={{color:"white",marginRight:"1rem"}} /></a>                   
-                    <a href="https://twitter.com/ipranavprashant" rel="noreferrer" target="_blank"><FaTwitter size={20} style={{color:"white",marginRight:"1rem"}} /></a>
-                    <a href="https://www.linkedin.com/in/pranavprashant/" rel="noreferrer" target="_blank"><FaLinkedinIn size={20} style={{color:"white",marginRight:"1rem"}} /></a>
+                    <a href="https://www.instagram.com/vertexclassesofficial/" rel="noreferrer" target="_blank"><FaInstagram size={20} style={{color:"white",marginRight:"1rem"}} /></a>
+                    <a href="https://www.youtube.com/@vertexclassesbegusarai2249/" rel="noreferrer" target="_blank"><FaYoutube size={20} style={{color:"white",marginRight:"1rem"}} /></a>                   
+                    <a href="https://twitter.com/vertexclassesbg?t=9EKqVahAXrtuSdYUSnE3JQ&s=08/" rel="noreferrer" target="_blank"><FaTwitter size={20} style={{color:"white",marginRight:"1rem"}} /></a>
+                    <a href="https://www.instagram.com/vertexclassesofficial/" rel="noreferrer" target="_blank"><FaLinkedinIn size={20} style={{color:"white",marginRight:"1rem"}} /></a>
                     </div>
                 </li>
                 <li className='first-section-first'><small className='DnD'>Designed and Developed By</small></li>
