@@ -36,7 +36,7 @@ const Footer = () => {
                 <li className='heading'><span className='heading-follow-us'>Follow Us</span></li>
                 <li className='first-section-first'>
                     <div className='socials'>
-                    <a href="https://www.facebook.com/Prazz51/" rel="noreferrer" target="_blank"><FaFacebook size={20} style={{color:"white",marginRight:"1rem"}} /></a>
+                    <a href="https://www.facebook.com/vertex.classes.31?mibextid=ZbWKwL/" rel="noreferrer" target="_blank"><FaFacebook size={20} style={{color:"white",marginRight:"1rem"}} /></a>
                     <a href="https://www.instagram.com/ipranavprashant/" rel="noreferrer" target="_blank"><FaInstagram size={20} style={{color:"white",marginRight:"1rem"}} /></a>
                     <a href="https://www.instagram.com/ipranavprashant/" rel="noreferrer" target="_blank"><FaYoutube size={20} style={{color:"white",marginRight:"1rem"}} /></a>                   
                     <a href="https://twitter.com/ipranavprashant" rel="noreferrer" target="_blank"><FaTwitter size={20} style={{color:"white",marginRight:"1rem"}} /></a>
